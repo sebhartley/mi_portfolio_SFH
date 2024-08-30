@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio de Sebastián</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="hamburger-menu" class="hamburger-menu">
+            &#9776; <!-- Ícono de hamburguesa -->
+        </div>
+        <ul id="menu" class="menu">
+            <li><a href="#introduction" class="nav-link">Home</a></li>
+            <li><a href="#about" class="nav-link">About me</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#resume" class="nav-link">Resume/CV</a></li>
+            <li><a href="#services" class="nav-link">Services</a></li>
+            <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+            <li><a href="#contact" class="nav-link">Contact</a></li>
+            <li><a href="#socials" class="nav-link">Socials</a></li>
+            <li><a href="#skills" class="nav-link">Skills</a></li>
+            <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Home</header>
+            <img src="C:\Users\sebafernande\Documents\PORTFOLIO SFH\images\mi_imagen.jpg" alt="Sebastián photo" width="200" height="200"> 
+            <p>Bienvenido a mi portfolio. Soy Sebastián Fernandez Hartley, un científico de datos y desarrollador con experiencia en proyectos complejos dentro de Mercado Libre, empresa donde trabajo hace 4 años. Me encuentro estudiando la carrera de Ingenería en Informática en la Universidad Argentina de la Empresa (UADE).</p>
+        </section>
+        <section class="main-section" id="about">
+            <header>About me</header>
+            <p>Soy un profesional apasionado por la tecnología, con una sólida formación en Data Science, Python y una dedicación constante para mejorar mis habilidades. Me especializo en la creación de soluciones tecnológicas innovadoras.</p>
+        </section>
+        <section class="main-section" id="portfolio">
+            <header>Portfolio</header>
+            <img src="C:\Users\sebafernande\Documents\PORTFOLIO SFH\images\filter_master.png" alt="Project 1" width="400" height="200">
+            <p>Este es uno de mis proyectos más recientes, un script que permite a los usuarios gestionar grandes volumes de datos filtrando por palabras clave de manera eficiente.</p>
+        </section>
+        <section class="main-section" id="resume">
+            <header>Resume/CV</header>
+            <p>Mi experiencia incluye más de 4 años en la industria tecnológica, trabajando con diversas tecnologías.</p>
+            <a href="C:\Users\sebafernande\Documents\PORTFOLIO SFH\cv\CV Sebastian Fernandez Hartley.pdf" download>Descargar mi CV</a>
+        </section>
+        <section class="main-section" id="services">
+            <header>Services</header>
+            <p>Machine Learning</p>
+            <p>Desarrollo web</p>
+            <p>Seguridad informática</p>
+            <p>Consultoría tecnológica</p>
+        </section>
+        <section class="main-section" id="testimonials">
+            <header>Testimonials</header>
+            <code>"Sebastián es un profesional dedicado, capaz de enfrentar desafíos complejos con soluciones creativas y efectivas." - Mariano Taborcias</code>
+        </section>
+        <section class="main-section" id="contact">
+            <header>Contact</header>
+            <p>Para contactarme, por favor envía un correo a <a href="mailto:">sfernandezhartley@gmail.com</a></p>
+        </section>
+        <section class="main-section" id="socials">
+            <header>Socials</header>
+            <p>Encuéntrame en LinkedIn, GitHub, y otras redes profesionales bajo /sebastianfernandezhartley.</p>
+        </section>
+        <section class="main-section" id="skills">
+            <header>Skills</header>
+            <p>Habilidades técnicas: Machine Learning, Python, HTML, CSS, JavaScript, React, Node.js, entre otras.</p>
+        </section>
+        <section class="main-section" id="certifications">
+            <header>Certifications</header>
+            <p>Certificaciones en desarrollo web y seguridad informática.</p>
+        </section>
+    </main>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menu = document.getElementById("menu");
+            const hamburgerMenu = document.getElementById("hamburger-menu");
+            const navLinks = document.querySelectorAll("#menu a");
+
+            hamburgerMenu.addEventListener("click", function() {
+                menu.classList.toggle("active");
+            });
+
+            navLinks.forEach(link => {
+                link.addEventListener("click", function() {
+                    menu.classList.remove("active");
+                });
+            });
+        });
+    </script>
+</body>
+</html>
